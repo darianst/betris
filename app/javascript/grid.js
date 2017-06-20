@@ -64,8 +64,6 @@ export class BlockGrid {
       }
     }
 
-    window.grid = this.grid;
-
     return this;
   }
 
@@ -111,7 +109,6 @@ export class BlockGrid {
         this.grid[shape[i]['x']][shape[i]['y']]['colour'] = EMPTY_BLOCK;
       }
       moveBlocks(this.grid);
-      window.grid = this.grid;
       this.rerender();
     }
   }
